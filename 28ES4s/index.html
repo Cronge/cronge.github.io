@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Draw</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div id="container">
+			<h1 id="main-heading">Draw</h1>
+			<span id="subtitle">Click and move the pointer on the Canvas to draw. </span>
+			<button id="clear">Clear</button>
+			<canvas id="canvas" width="1280" height="720"
+				>Your browser does not support the canvas.</canvas
+			>
+			<div id="sliders">
+				<h2 id="sliders-heading">Settings</h2>
+				<div class="slider-container">
+					<label for="opacity-slider">Opacity</label>
+					<input
+						type="range"
+						name="opacity-slider"
+						class="slider"
+						id="opacity-slider"
+						min="0"
+						max="100"
+						value="100"
+					/>
+					<div class="slider-value" id="opacity-value"></div>
+				</div>
+				<div class="slider-container">
+					<label for="brush-size-slider">Size</label>
+					<input
+						type="range"
+						name="brush-size-slider"
+						class="slider"
+						id="brush-size-slider"
+						min="1"
+						max="300"
+						value="6"
+					/>
+					<div class="slider-value" id="brush-size-value"></div>
+				</div>
+			</div>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
