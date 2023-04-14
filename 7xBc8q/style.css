@@ -1,0 +1,215 @@
+:root {
+	--background-color: #1a1a1a;
+	--font-color-primary: #ffffff;
+    --font-color-dark: #000;
+	--link-color-primary: #75b8ff;
+    --border-color-primary: rgba(255, 255, 255, 0.3);
+	--envelope-color: #ffffff;
+	--brands-instagram-color: #e1306c;
+    --brands-twitter-color: #1da1f2;
+    --footer-color: rgba(0, 0, 0, 0.1);
+    --background-light-primary: #2a2a2a;
+    --hr-color-primary: rgba(255, 255, 255, 0.3);
+    --star-color-primary: #faca3b;
+}
+
+*, ::after, ::before {
+	box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+	display: grid;
+	height: 100vh;
+	width: 100vw;
+	place-items: center;
+	text-align: center;
+	background-color: var(--background-color);
+}
+
+h1, h2, h3, h4, h5, h6, p, span, a, abbr, blockquote, div {
+	font-family: "Inter", sans-serif;
+	text-rendering: optimizeLegibility;
+	color: var(--font-color-primary);
+    font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 700;
+    margin: 2rem auto 2rem auto;
+}
+
+p, span {
+    margin: 2rem auto 2rem auto;
+}
+
+a {
+	text-decoration: none;
+	font-weight: 400;
+    color: var(--link-color-primary);
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+img {
+    object-fit: cover;
+}
+
+hr {
+    border-top: 1px solid var(--hr-color-primary);
+    width: 70%;
+}
+
+.navbar {
+	border-bottom: 1px solid var(--border-color-primary);
+    margin-bottom: 2rem;
+}
+
+.nav-link:hover,
+.navbar-brand:hover {
+    text-decoration: none;
+}
+
+#travels-heading {
+    margin-top: 10rem;
+}
+
+.travel-subtitle {
+    display: block;
+    background-color: var(--background-light-primary);
+    border: 1px solid var(--border-color-primary);
+    padding: 0.5rem 0 0.5rem 0;
+    border-radius: 8px;
+}
+
+@media only screen and (min-width: 992px) {
+    #travels-heading {
+        margin-top: 6rem;
+    }
+}
+
+.travel-desc {
+    font-size: 13pt;
+    text-align: left;
+}
+
+.place-photo {
+    width: 25em;
+}
+
+.div-photos {
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-photos > div {
+    display: grid;
+    place-items: center;
+}
+
+.photos {
+    width: 15em;
+    height: 20em;
+}
+
+.photo-subtitle {
+    background-color: var(--background-light-primary);
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 8px;
+}
+
+.text-jp {
+    font-family: 'Noto Serif JP', serif;
+    font-weight: 400;
+}
+
+.subheading {
+    font-size: 13pt;
+}
+
+.div-movies {
+    display: grid;
+    place-items: center;
+}
+
+.movie-photo, .book-cover {
+    width: 25em;
+}
+
+.div-imdb-rating {
+    background-color: rgba(0, 0, 0, 0.25);
+    margin-top: 2rem;
+    border-radius: 8px;
+    padding: 1.5rem 0 1.5rem 0;
+    width: 20rem;
+}
+
+.link-source {
+    display: block;
+    margin: 0 0 0 0;
+}
+
+.div-books {
+    display: grid;
+    place-items: center;
+}
+
+.div-book-purchase-links {
+    display: grid;
+}
+
+#contact > div {
+	display: grid;
+	gap: 0.5rem;
+}
+
+.fa-solid, .fa-regular, .fa-brands {
+	color: var(--font-color-primary);
+}
+
+.fa-envelope {
+    color: var(--envelope-color);
+}
+
+.fa-instagram, .contacts-instagram {
+    background: rgb(255, 220, 128);
+    background: linear-gradient(to right top, 
+    rgba(255,220,128,1) 10%, 
+    rgba(252, 175, 69, 1) 20%, 
+    rgba(247, 119, 55, 1) 30%, 
+    rgba(245, 96, 64, 1) 40%, 
+    rgba(253, 29, 29, 1) 50%, 
+    rgba(225, 48, 108, 1) 60%, 
+    rgba(193, 53, 132, 1) 70%, 
+    rgba(131, 58, 180, 1) 80%, 
+    rgba(91, 81, 216, 1) 90%, 
+    rgba(64, 93, 230, 1) 100%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.fa-twitter, .contacts-twitter {
+    color: var(--brands-twitter-color);
+}
+
+.fa-star {
+    color: var(--star-color-primary);
+}
+
+footer {
+    margin: 2rem auto 2rem auto;
+    border-top: 1px solid var(--border-color-primary);
+    padding: 2rem 0 2rem 0;
+    background-color: var(--footer-color);
+    width: 100%;
+}
