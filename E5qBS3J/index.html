@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/prism-themes/prism-atom-dark.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Document</title>
+	</head>
+	<body>
+		<h1 id="arrays-heading">JavaScript Arrays</h1>
+		<div id="wrapper">
+			<span>
+				Arrays are a way to store multiple values in a single variable. <br />
+				Arrays always start with 0 in JavaScript.
+			</span>
+			<hr noshade="true">
+			<h2>Declaration</h2>
+			<div>
+				<span>Declare an array</span>
+				<pre>
+                    <code class="language-javascript">
+                        let array = ["Item 1", "Item 2", "Item 3"];
+                    </code>
+                </pre>
+			</div>
+			<hr noshade="true">
+			<h2>Using console.log() with Arrays</h2>
+			<div>
+				<span>Print the first element of an array</span>
+				<pre>
+                    <code class="language-javascript">
+                        let array = ["Item 1", "Item 2", "Item 3"]; 
+                        let element1 = array[0]; 
+
+                        console.log(element1); // Outputs Item 1
+                    </code>
+                </pre>
+			</div>
+			<div>
+				<span>Print the second element of an array</span>
+				<pre>
+                    <code class="language-javascript">
+                        let array = ["Item 1", "Item 2", "Item 3"]; 
+                        let element2 = array[1]; 
+
+                        console.log(element1); // Outputs Item 2
+                    </code>
+                </pre>
+			</div>
+			<div>
+				<span>Print the third element of an array</span>
+				<pre>
+                    <code class="language-javascript">
+                        let array = ["Item 1", "Item 2", "Item 3"]; 
+                        let element3 = array[2]; 
+
+                        console.log(element1); // Outputs Item 3
+                    </code>
+                </pre>
+			</div>
+			<hr noshade="true">
+			<h2>Array.length</h2>
+			<div>
+				<span
+					>Get the length of an array (<code class="language-javascript"
+						>array.length</code
+					>)</span
+				>
+				<pre>
+                    <code class="language-javascript">
+                        let array = ["Item 1", "Item 2", "Item 3"]; 
+
+                        console.log(array.length); // Outputs 3
+                    </code>
+                </pre>
+			</div>
+			<h2>Array: forEach()</h2>
+			<div>
+				<span
+					>Loop through an array and print each element using
+					<code class="language-javascript">forEach()</code>. You can also do other
+					things than just
+					<code class="language-javascript">console.log()</code></span
+				>
+				<pre>
+                    <code class="language-javascript">
+                        let array = ["Item 1", "Item 2", "Item 3"]; 
+
+                        array.forEach(element, =&gt; { 
+                            console.log(element); 
+                        }); // Outputs Item 1 Item 2 Item 3
+                    </code>
+                </pre>
+			</div>
+			<h2>Array: push()</h2>
+			<div>
+				<span
+					>Add element(s) at the end of an array using
+					<code class="language-javascript">push()</code>. It returns the array's new
+					length when put in
+					<code class="language-javascript">console.log()</code></span
+				>
+				<pre>
+                    <code class="language-javascript">
+                        let array = ["Item 1", "Item 2", "Item 3"]; 
+
+						console.log(array.push("Item 4")); // Outputs 4 
+
+						array.push("Item 5", "Item 6");
+
+						console.log(array); // Outputs ['Item 1', 'Item 2', 'Item 3', 'Item 4', 'Item 5', 'Item 6']
+                    </code>
+                </pre>
+			</div>
+			<h2>Array: sort()</h2>
+			<div>
+				<span
+					>Sort an array alphabetically (<code class="language-javascript"
+						>sort()</code
+					>)</span
+				>
+				<pre>
+                    <code class="language-javascript">
+                        let letters = ["b", "c", "a"]; 
+
+                        console.log(letters) // Outputs ['b', 'c', 'a']
+
+                        letters.sort();
+
+                        console.log(letters); // Outputs ['a', 'b', 'c']
+                    </code>
+                </pre>
+			</div>
+			<h2>Array: reverse()</h2>
+			<div>
+				<span
+					>Reverse an array (<code class="language-javascript">reverse()</code
+					>)</span
+				>
+				<pre>
+                    <code class="language-javascript">
+                        let letters = ["a", "b", "c"]; 
+
+                        console.log(letters); // Outputs ['a', 'b', 'c']
+
+                        letters.reverse();
+
+                        console.log(letters); // Outputs ['c', 'b', 'a']
+                    </code>
+                </pre>
+			</div>
+			<hr noshade="true">
+			<h2>Math.max</h2>
+			<div>
+				<span>Find the max number from an array</span>
+				<pre>
+                    <code class="language-javascript">
+                        let numbers = ["42", "69"];
+
+                        console.log(Math.max(numbers)); // Outputs 69
+
+                        // You can also use variables
+
+                        let numbers2 = ["17", "29"];
+                        let maxNumber = Math.max(numbers);
+                        
+                        console.log(maxNumber); // Outputs 29
+                    </code>
+                </pre>
+			</div>
+			<h2>Math.min</h2>
+			<div>
+				<span>Find the minimum number from an array</span>
+				<pre>
+                    <code class="language-javascript">
+                        let numbers = ["3", "64"];
+
+                        console.log(Math.min(numbers)); // Outputs 3
+
+                        // You can also use variables
+
+                        let numbers2 = ["41", "11"];
+                        let maxNumber = Math.min(numbers);
+                        
+                        console.log(minNumber); // Outputs 11
+                    </code>
+                </pre>
+			</div>
+			<!-- <h2 id="additional-activity-heading">Additional Activity</h2> -->
+			<hr noshade="true">
+			<h2>Array: unshift()</h2>
+			<div>
+				<span
+					>Add element(s) at the start of an array (<code class="language-javascript"
+						>unshift()</code
+					>). <br />
+					Like <code class="language-javascript">push()</code>, it also returns the
+					array's new length when put in
+					<code class="language-javascript">console.log()</code>
+				</span>
+				<pre>
+					<code class="language-javascript">
+						let array = ["Item 1", "Item 2", "Item 3"];
+
+						console.log(array.unshift("Orange")); // Outputs 4
+
+						array.unshift("Apple");
+
+						console.log(array); // Outputs ['Apple', 'Orange', 'Item 1', 'Item 2', 'Item 3']
+					</code>
+				</pre>
+			</div>
+			<h2>Array: pop()</h2>
+			<div>
+				<span
+					>Remove element(s) at the end of an array (<code
+						class="language-javascript"
+						>pop()</code
+					>). It returns the removed element when put in
+					<code class="language-javascript">console.log()</code></span
+				>
+				<pre>
+					<code class="language-javascript">
+						let desserts = ["Cake", "Ice Cream", "Cupcake", "Cookie"];
+
+						console.log(desserts.pop()); // Outputs Cookie
+
+						desserts.pop();
+
+						console.log(desserts); // Outputs ['Cake', 'Ice Cream']
+					</code>
+				</pre>
+			</div>
+			<h2>Array: concat()</h2>
+			<div>
+				<span
+					>Merge (join) two arrays using
+					<code class="language-javascript">concat()</code></span
+				>
+				<pre>
+					<code class="language-javascript">
+						let games1 = ["Minecraft", "Fortnite", "Roblox"];
+						let games2 = ["CS:GO", "GTA V", "League of Legends"];
+		
+						let games = games1.concat(games2);
+		
+						console.log(games); // Outputs ['Minecraft', 'Fortnite', 'Roblox', 'CS:GO', 'GTA V', 'League of Legends']
+
+						console.log(games1.concat(games2)) // Same output as above, but different approach
+					</code>
+				</pre>
+			</div>
+		</div>
+		<script src="scripts/prism.js"></script>
+	</body>
+</html>
