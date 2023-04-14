@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>C81 - Canvas</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div id="wrapper">
+			<h1 id="main-heading">Canvas</h1>
+			<span id="subtitle"
+				>Click anywhere on the canvas to draw a circle.<br />
+				Customize the circle in Circle Settings.<br /> <br />
+				Press Clear to erase all drawings on the canvas.</span
+			>
+			<canvas id="canvas" width="1280" height="720"
+				>A canvas (this is not a photo)</canvas
+			>
+			<h1 id="settings-heading">Circle Settings</h1>
+			<!---->
+			<form id="color" autocomplete="off" spellcheck="false">
+				<div class="input-div">
+					<label for="color-input"> <strong>Color</strong>: </label>
+					<input
+						type="text"
+						name="color-input"
+						id="color-input"
+						placeholder="Enter a Hex code, e.g. #FFFF00"
+						value="#000000"
+					/>
+				</div>
+				<div class="input-div">
+					<label for="radius-input"> <strong>Radius</strong>: </label>
+					<input
+						type="text"
+						name="radius-input"
+						id="radius-input"
+						placeholder="Enter a number from 1 - 500"
+						value="40"
+					/>
+				</div>
+				<div class="input-div">
+					<label for="thickness-input"> <strong>Thickness</strong>: </label>
+					<input
+						type="text"
+						name="thickness-input"
+						id="thickness-input"
+						placeholder="Enter a number from 1 - 500"
+						value="1"
+					/>
+				</div>
+				<span></span>
+			</form>
+			<!---->
+			<button id="clear">Clear</button>
+		</div>
+		<!---->
+		<script src="script.js"></script>
+	</body>
+</html>
