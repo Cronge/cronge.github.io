@@ -7,15 +7,19 @@ const rover = new Image();
 let x = canvas.width / 2;
 let y = canvas.height / 2;
 
-const roverWidth = 100;
-const roverHeight = 90;
+const marsImages = [
+	"images/mars-1.jpg",
+	"images/mars-2.jpg",
+	"images/mars-3.jpg",
+	"images/mars-4.jpg",
+];
 
-mars.src = "mars.jpg";
-rover.src = "rover.png";
+mars.src = marsImages[Math.floor(Math.random() * 4)];
+rover.src = "images/rover.png";
 
 window.onload = () => {
-	ctx.drawImage(mars, 0, 0, canvas.width, canvas.height);
-	ctx.drawImage(rover, x, y, roverWidth, roverHeight);
+	console.log(mars.src);
+	draw(x, y);
 };
 
 canvas.addEventListener("mousedown", start);
@@ -28,8 +32,8 @@ function start(e) {
 }
 
 function getMousePos(e) {
-	x = e.clientX - canvas.getBoundingClientRect().left - roverWidth / 2;
-	y = e.clientY - canvas.getBoundingClientRect().top - roverHeight / 2;
+	x = e.clientX - canvas.getBoundingClientRect().left - 100 / 2;
+	y = e.clientY - canvas.getBoundingClientRect().top - 90 / 2;
 }
 
 function stop() {
@@ -96,5 +100,5 @@ function move(e) {
 function draw(x, y) {
 	ctx.clearRect(0, 0, canvas.width, canvas.height);
 	ctx.drawImage(mars, 0, 0, canvas.width, canvas.height);
-	ctx.drawImage(rover, x, y, roverWidth, roverHeight);
+	ctx.drawImage(rover, x, y, 100, 90);
 }
