@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Student Names</title>
+	</head>
+	<body>
+		<form autocomplete="off">
+			<div id="wrapper">
+				<h1>Students</h1>
+				<span>Names of your students.</span>
+				<div>
+					<label for="input-1">Student 1:</label>
+					<input
+						type="text"
+						name="student-name-1"
+						id="input-1"
+						placeholder="Type something"
+					/>
+				</div>
+				<div>
+					<label for="input-2">Student 2:</label>
+					<input
+						type="text"
+						name="student-name-2"
+						id="input-2"
+						placeholder="Type something"
+					/>
+				</div>
+				<div>
+					<label for="input-3">Student 3:</label>
+					<input
+						type="text"
+						name="student-name-3"
+						id="input-3"
+						placeholder="Type something"
+					/>
+				</div>
+				<div id="button-div">
+					<button id="submit-button" type="button">Submit</button>
+					<div id="separator"></div>
+					<button id="sort-button" type="button">Sort</button>
+				</div>
+				<div id="output-div">
+					<span class="output" id="output">Names — </span>
+				</div>
+				<hr id="names-separator">
+				<!---->
+				<div id="sorted-names">
+					<h3 id="sorted-names-heading">Sorted</h3>
+					<span class="output" id="sorted-output">Names (sorted) — </span>
+				</div>
+			</div>
+			<script src="script.js"></script>
+		</form>
+	</body>
+</html>
