@@ -1,0 +1,108 @@
+:root {
+    --background-color: #fff;
+    --button-shadow: rgba(0, 0, 0, 0.15);
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+
+    margin: 0;
+    padding: 0;
+}
+
+
+
+h1, h2, h3, h4, h5, h6, p, span, abbr, blockquote, a, textarea {
+    font-family: 'Inter', sans-serif;
+    color: #000;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    margin: 0;
+    background-color: var(--background-color);
+}
+
+::-webkit-scrollbar {
+    width: 2px;
+    background: transparent;
+    border-radius: 8px;
+}
+
+p {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    text-align: left;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    font-family: 'Inter', sans-serif;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    height: 2rem;
+    width: 6.2rem;
+    font-size: 0.8rem;
+    background-color: #1f75ff;
+
+    -webkit-box-shadow: 0px 0px 10px var(--button-shadow);
+    -moz-box-shadow: 0px 0px 10px var(--button-shadow);
+    box-shadow: 0px 0px 10px var(--button-shadow);
+
+    transition: all 100ms ease;
+}
+
+button:hover {
+    background-color: #1c69e6;
+
+    -webkit-transition: background-color 100ms ease;
+    -moz-transition: background-color 100ms ease;
+    -ms-transition: background-color 100ms ease;
+    -o-transition: background-color 100ms ease;
+    transition: background-color 100ms ease;
+}
+
+button:active {
+    background-color: #185dcc;
+
+    -webkit-transition: background-color 100ms ease;
+    -moz-transition: background-color 100ms ease;
+    -ms-transition: background-color 100ms ease;
+    -o-transition: background-color 100ms ease;
+    transition: background-color 100ms ease;
+}
+
+.section-heading {
+    font-size: 25pt;
+    margin-top: 3rem;
+    font-weight: bold;
+}
+
+.sections {
+    display: grid;
+    place-items: center;
+    gap: 3rem;
+}
+
+#apps > div,
+#chatbot > div {
+    display: flex;
+    gap: 3rem;
+}
+
+#carousel {
+    width: 440px;
+    height: 757px;
+}
