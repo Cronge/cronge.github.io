@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Mini Minecraft — Minecraft but Worse</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div id="container">
+			<h1>Mini Minecraft</h1>
+			<p>A version of Minecraft that is worse and not Minecraft.</p>
+			<p>Click to select an object. Drag to move.</p>
+			<canvas id="canvas" width="1024" height="640">A canvas</canvas>
+			<h2>Controls</h2>
+			<ul>
+				<li><kbd>G</kbd>&nbsp;&nbsp;Spawn grass block</li>
+				<li><kbd>T</kbd>&nbsp;&nbsp;Spawn oak log</li>
+				<li><kbd>O</kbd>&nbsp;&nbsp;Spawn oak planks</li>
+				<li><kbd>B</kbd>&nbsp;&nbsp;Spawn stone bricks</li>
+				<li><kbd>C</kbd>&nbsp;&nbsp;Spawn cobblestone</li>
+			</ul>
+		</div>
+		<div style="display: none">
+			<img id="player" src="./assets/player.png" />
+			<img id="grass-block=" src="./assets/grass_block.png" />
+			<img id="oak-log" src="./assets/oak_log.png" />
+		</div>
+		<script src="script.js" type="module"></script>
+		<script src="https://cdn.jsdelivr.net/npm/fabric"></script>
+	</body>
+</html>
